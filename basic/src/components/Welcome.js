@@ -4,7 +4,7 @@ class Welcome extends Component {
     render() {
 
         return (
-            <div>Hello class Component</div>
+        <div>Hello class {this.props.name}</div>
         );
     }
 

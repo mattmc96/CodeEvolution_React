@@ -7,8 +7,15 @@ import Welcome from './components/Welcome';
 function App() {
   return (
     <div className="App">
-      <Greet/>
-      <Welcome/>
+      <Greet name= "Vaibhav" heroName = "Batman">
+        <p>these are children props</p>
+      </Greet>
+      <Greet name= "Clark" heroName = "Bruce">
+        <button>Bruce</button>  
+      </Greet>
+      <Greet name= "Diana" heroName = "Wonder Woman"/>
+
+      <Welcome name= "Diana" heroName = "Wonder Woman"/>
     </div>
   );
 }
