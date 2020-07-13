@@ -4,7 +4,7 @@ class Welcome extends Component {
     render() {
 
         return (
-            <div>Heloo class Component</div>
+            <div>Hello class Component</div>
         );
     }
 
