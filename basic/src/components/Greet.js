@@ -4,12 +4,21 @@ import React from 'react';
 //     return <h2>Hello Vaibhav</h2>
 // }
 
+// below shows destruturing in functional components
+
+// const Greet = ({name, heroName}) => {
+// return (
+//     <div>
+// <h3>hello {name} a.k.a {heroName}</h3>
+// </div>
+// )}
+
+
 const Greet = props => {
-return (
-    <div>
-<h3>hello {props.name} a.k.a {props.heroName}</h3> <h7>{props.children}</h7>
-</div>
-)}
+    const {name, heroName} = props
+    return (
+    <h3>hello {name} a.k.a {heroName}</h3>
+    )}
 
 
 export default Greet;

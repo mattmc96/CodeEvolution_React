@@ -15,11 +15,11 @@ function App() {
       <Greet name= "Clark" heroName = "Bruce">
         <button>Bruce</button>  
       </Greet>
-      <Greet name= "Diana" heroName = "Wonder Woman"/>
+      <Greet name= "Diana" heroName = "Wonder Woman"/>  */}
 
-      <Welcome name= "Diana" heroName = "Wonder Woman"/> */}
+      <Welcome name= "Diana" heroName = "Wonder Woman"/> 
       {/* <Message/> */}
-      <Counter/>
+      {/* <Counter/> */}
     </div>
   );
 }
