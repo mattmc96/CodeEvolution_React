@@ -6,7 +6,7 @@ class UserGreeting extends Component {
         super(props)
     
         this.state = {
-             isLoggedIn : false
+             isLoggedIn : true
         }
     }
     
@@ -31,11 +31,19 @@ class UserGreeting extends Component {
 
         // return <div>message</div>
 
-        return(
-            this.state.isLoggedIn ?
-            <div>Welcome Vaibhav</div> :
-            <div>Welcome Guest</div>
-        )
+        // ternary
+
+        // return(
+        //     this.state.isLoggedIn ?
+        //     <div>Welcome Vaibhav</div> :
+        //     <div>Welcome Guest</div>
+        // )
+
+
+        // short- circuit 
+    
+        return this.state.isLoggedIn && <div>Welcome Vaibhav</div>
+
     }
 }
 
