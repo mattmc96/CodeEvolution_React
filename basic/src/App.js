@@ -15,6 +15,8 @@ import Form from './components/Form';
 import LifeCycleA from'./components/LifeCycleA'; 
 import PureComp from './components/PureComp';
 import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
+
 function App() {
   return (
     <div className="App">
@@ -46,11 +48,13 @@ function App() {
 
       {/* <LifeCycleA/> */}
 
-     <ParentComp></ParentComp>
+     {/* <ParentComp></ParentComp> */}
 
       {/* <FunctionClick/> */}
 
       {/* <ClassClick/> */}
+
+      <RefsDemo />
     </div>
   );
 }
