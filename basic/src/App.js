@@ -46,7 +46,7 @@ function App() {
 
       {/* <LifeCycleA/> */}
 
-     <ParentComp></ParentComp>
+     {/* <ParentComp></ParentComp> */}
 
       {/* <FunctionClick/> */}
 
