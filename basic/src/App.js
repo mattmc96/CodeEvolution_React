@@ -17,6 +17,7 @@ import PureComp from './components/PureComp';
 import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
 import FRinput from './components/FRParentInput';
+import PortalDemo from './components/PortalDemo';
 
 function App() {
   return (
@@ -57,7 +58,8 @@ function App() {
 
       {/* <RefsDemo /> */}
 
-      <FRinput />
+      {/* <FRinput /> */}
+      <PortalDemo/>
     </div>
   );
 }
