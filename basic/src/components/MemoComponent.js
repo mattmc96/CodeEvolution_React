@@ -11,4 +11,4 @@ function MemoComponent({name}) {
     )
 }
 
-export default MemoComponent
+export default React.memo(MemoComponent)
