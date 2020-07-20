@@ -22,11 +22,15 @@ import './App.css';
 // import ErrorBoundary from './components/ErrorBoundary';
 //import ClickCounter from './components/ClickCounter';
 //import HoverCounter from './components/HoverCounter';
-import ClickCounter2 from './components/ClickCounter2';
-import HoverCounter2 from './components/HoverCounter2';
-import CounterProps from './components/CounterProps';
+//import ClickCounter2 from './components/ClickCounter2';
+//import HoverCounter2 from './components/HoverCounter2';
+//import CounterProps from './components/CounterProps';
 
 //import User from './components/User';
+
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/UserContext';
+
 
 function App() {
   return (
@@ -92,15 +96,19 @@ function App() {
       {/* <ClickCounter2/>
       <HoverCounter2/> */}
 
-{/* <User render= {(isLoggedIn) => isLoggedIn ? 'vaibhav' : 'Guest'}/> */}
+      {/* <User render= {(isLoggedIn) => isLoggedIn ? 'vaibhav' : 'Guest'}/> */}
 
-      <CounterProps render= {(count, incrementCount) => (
+      {/* <CounterProps render= {(count, incrementCount) => (
         <ClickCounter2 count={count} incrementCount={incrementCount}/>
       )} />
 
       <CounterProps render= {(count, incrementCount) => (
         <HoverCounter2 count={count} incrementCount={incrementCount}/>
-      )} />
+      )} /> */}
+      
+    <UserProvider value="vaibhav">
+    <ComponentC/>
+    </UserProvider>
     
     </div>
   );
