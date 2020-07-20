@@ -15,6 +15,11 @@ function HookMouse() {
         // worked as a didMount method
         console.log('useEffect called')
         window.addEventListener('mousemove', logMousePosition)
+
+        // clean up code below
+        return() => {
+            console.log('unmounting code here')
+        }
     }, [])
 
     return (
