@@ -20,9 +20,13 @@ import './App.css';
 // import PortalDemo from './components/PortalDemo';
 // import Hero from './components/Hero';
 // import ErrorBoundary from './components/ErrorBoundary';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+//import ClickCounter from './components/ClickCounter';
+//import HoverCounter from './components/HoverCounter';
+import ClickCounter2 from './components/ClickCounter2';
+import HoverCounter2 from './components/HoverCounter2';
+import CounterProps from './components/CounterProps';
 
+//import User from './components/User';
 
 function App() {
   return (
@@ -78,11 +82,26 @@ function App() {
       <ErrorBoundary>
       <Hero heroName='Joker'/>
       </ErrorBoundary> */}
-
+{/* 
       <ClickCounter name= 'Vaibhav'/>
 
-      <HoverCounter/>
 
+
+      <HoverCounter/> */}
+
+      {/* <ClickCounter2/>
+      <HoverCounter2/> */}
+
+{/* <User render= {(isLoggedIn) => isLoggedIn ? 'vaibhav' : 'Guest'}/> */}
+
+      <CounterProps render= {(count, incrementCount) => (
+        <ClickCounter2 count={count} incrementCount={incrementCount}/>
+      )} />
+
+      <CounterProps render= {(count, incrementCount) => (
+        <HoverCounter2 count={count} incrementCount={incrementCount}/>
+      )} />
+    
     </div>
   );
 }
