@@ -5,10 +5,9 @@ import './App.css';
 // import HookCounterThree from './components/HookCounterThree';
 //import ClassCounterOne from './components/ClassCounterOne';
 //import HookMouse from './components/HookMouse';
-import ComponentC from './components/ComponentC';
-
-export const UserContext = React.createContext()
-export const ChannelContext = React.createContext()
+//import ComponentC from './components/ComponentC';
+//export const UserContext = React.createContext()
+//export const ChannelContext = React.createContext()
 
 function App() {
   return (
@@ -18,11 +17,13 @@ function App() {
          {/* <HookCounterThree/> */}
          {/* <ClassCounterOne/> */}
         
-          <UserContext.Provider value={'Vaibhav'}>
+          {/* <UserContext.Provider value={'Vaibhav'}>
             <ChannelContext.Provider value={'my value'}>
               <ComponentC/>
             </ChannelContext.Provider>
-          </UserContext.Provider>
+          </UserContext.Provider> */}
+
+
     </div>
   );
 }
