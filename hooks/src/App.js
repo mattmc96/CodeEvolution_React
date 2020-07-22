@@ -6,7 +6,8 @@ import './App.css';
 //import ClassCounterOne from './components/ClassCounterOne';
 //import HookMouse from './components/HookMouse';
 //import ComponentC from './components/ComponentC';
-import ParentComponent from './components/ParentComponent';
+//import ParentComponent from './components/ParentComponent';
+import Counter from './components/Counter';
 //export const UserContext = React.createContext()
 //export const ChannelContext = React.createContext()
 
@@ -24,8 +25,9 @@ function App() {
             </ChannelContext.Provider>
           </UserContext.Provider> */}
 
-          <ParentComponent/>
-          
+          {/* <ParentComponent/> */}
+
+          <Counter />
     </div>
   );
 }
