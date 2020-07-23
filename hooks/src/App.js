@@ -7,7 +7,9 @@ import './App.css';
 //import HookMouse from './components/HookMouse';
 //import ComponentC from './components/ComponentC';
 //import ParentComponent from './components/ParentComponent';
-import Counter from './components/Counter';
+//import Counter from './components/Counter';
+import FocusInput from './components/FocusInput';
+
 //export const UserContext = React.createContext()
 //export const ChannelContext = React.createContext()
 
@@ -27,7 +29,9 @@ function App() {
 
           {/* <ParentComponent/> */}
 
-          <Counter />
+          {/* <Counter /> */}
+
+          <FocusInput/>
     </div>
   );
 }
