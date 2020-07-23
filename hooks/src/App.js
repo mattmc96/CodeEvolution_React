@@ -8,7 +8,8 @@ import './App.css';
 //import ComponentC from './components/ComponentC';
 //import ParentComponent from './components/ParentComponent';
 //import Counter from './components/Counter';
-import FocusInput from './components/FocusInput';
+//import FocusInput from './components/FocusInput';
+import ClassTimer from './components/ClassTimer'; 
 
 //export const UserContext = React.createContext()
 //export const ChannelContext = React.createContext()
@@ -31,7 +32,10 @@ function App() {
 
           {/* <Counter /> */}
 
-          <FocusInput/>
+          {/* <FocusInput/> */}
+
+          <ClassTimer />
+          
     </div>
   );
 }
