@@ -1,18 +1,18 @@
-import React from 'react';
+import React from "react";
 //import logo from './logo.svg';
-import './App.css';
-// import Greet from './components/Greet';
+import "./App.css";
+import Greet from "./components/Greet";
 // import Welcome from './components/Welcome';
 // import Message from './components/Message';
 // import Counter from './components/Counter';
-// import FunctionClick from './components/FunctionClick';
+import FunctionClick from "./components/FunctionClick";
 // import ClassClick from './components/ClassClick';
 // import EventBind from './components/EventBind';
 // import ParentComponent from './components/ParentComponent';
 // import UserGreeting from './components/UserGreeting';
 // import NameList from './components/NameList';
 // import Form from './components/Form';
-// import LifeCycleA from'./components/LifeCycleA'; 
+// import LifeCycleA from'./components/LifeCycleA';
 // import PureComp from './components/PureComp';
 // import ParentComp from './components/ParentComp';
 // import RefsDemo from './components/RefsDemo';
@@ -28,14 +28,12 @@ import './App.css';
 
 //import User from './components/User';
 
-import ComponentC from './components/ComponentC';
-import { UserProvider } from './components/UserContext';
-
+import ComponentC from "./components/ComponentC";
+import { UserProvider } from "./components/UserContext";
 
 function App() {
   return (
     <div className="App">
-      
       {/* <Greet name= "Vaibhav" heroName = "Batman">
         <p>these are children props</p>
       </Greet>
@@ -46,9 +44,9 @@ function App() {
       <Greet name= "Diana" heroName = "Wonder Woman"/>  */}
 
       {/* <Welcome name= "Diana" heroName = "Wonder Woman"/>  */}
-    
+
       {/* <Message/> */}
-    
+
       {/* <Counter/> */}
 
       {/* <EventBind/> */}
@@ -63,18 +61,18 @@ function App() {
 
       {/* <LifeCycleA/> */}
 
-     {/* <ParentComp></ParentComp> */}
+      {/* <ParentComp></ParentComp> */}
 
-      {/* <FunctionClick/> */}
+      <FunctionClick />
 
       {/* <ClassClick/> */}
 
       {/* <RefsDemo /> */}
 
       {/* <FRinput /> */}
-      
+
       {/* <PortalDemo/> */}
-      
+
       {/* <ErrorBoundary>
       <Hero heroName='Batman'/>
       </ErrorBoundary>
@@ -86,7 +84,7 @@ function App() {
       <ErrorBoundary>
       <Hero heroName='Joker'/>
       </ErrorBoundary> */}
-{/* 
+      {/* 
       <ClickCounter name= 'Vaibhav'/>
 
 
@@ -105,11 +103,10 @@ function App() {
       <CounterProps render= {(count, incrementCount) => (
         <HoverCounter2 count={count} incrementCount={incrementCount}/>
       )} /> */}
-      
-    <UserProvider value="vaibhav">
-    <ComponentC/>
-    </UserProvider>
-    
+
+      <UserProvider value="vaibhav">
+        <ComponentC />
+      </UserProvider>
     </div>
   );
 }
